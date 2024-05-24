@@ -13,16 +13,18 @@
 
 .header {
   height: 80px;
+  margin-bottom: 10px;
 }
 .content{
   &__ad{
     height: 400px;
-    width: 80%;
+    // width: 80%;
+    width: 300px;
     max-width: 300px;
     overflow: hidden;
     display: flex;
     justify-content: center;
-    padding: 10px;
+    padding: 5px;
     margin: 0 auto;
 
   }
@@ -30,5 +32,9 @@
     width: 100%;
     height: 100%;
     object-fit: fill;
+  }
+  &__teasers{
+    gap: 5px;
+
   }
 }
