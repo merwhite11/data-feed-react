@@ -6,7 +6,7 @@ import './Teasers.scss'
 function TeaserCard({image, title, summary}) {
   console.log('title', title)
   return (
-  <div className="teaser text-center justify-content-center">
+  <div className="teaser text-center">
     <section className="teaser__image-container">
       <img className="teaser__image" src={image}>
       </img>

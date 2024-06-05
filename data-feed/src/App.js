@@ -14,7 +14,7 @@ function App() {
         <div className="content__ad">
           <img className="content__ad-image" src={AdImage}></img>
         </div>
-        <div className="content__teasers d-flex flex-column justify-content-center col-md-6"><TeaserList/></div>
+        <div className="content__teasers col-md-6"><TeaserList/></div>
       </section>
     </div>
   );

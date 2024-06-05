@@ -8,7 +8,7 @@
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  @media(min-width: 768px) {
+  @media only screen and (min-width: 500px) and (max-width: 1023px) {
     &:first-child {
       .teaser__image {
         width: 90%;
@@ -37,19 +37,44 @@
       }
     }
   }
+  @media only screen and (min-width: 1024px) {
+    width: auto;
+    margin: 0;
+    display: block;
+    height: 300px;
 
+  }
+  &__image-container {
+    @media only screen and (min-width: 1024px) {
+      width: auto;
+      position: relative;
+      height: 150px;
+      display: flex;
+      justify-content: center;
+    }
+
+  }
   &__image {
     // height: 200px;
     width: 90%;
     height: auto;
     // border-radius: 10px;
     // padding: 5px;
+    @media only screen and (min-width: 1024px) {
+      // position: absolute;
+      // top: 0
+      object-fit: fill;
+    }
   }
   &__text {
     // width: 100%;
     // max-width: 300px;
     // margin: auto;
     padding: 3px;
+    @media only screen and (min-width: 1024px) {
+      overflow-y: scroll;
+      max-height: 140px;
+    }
   }
   &__title {
     @media(max-width: 374px) {
@@ -59,11 +84,15 @@
     max-width: 90%;
     // margin: auto;
     margin: 2px auto 2px auto;
+    @media only screen and (min-width: 1024px) {
+      font-size: medium;
+    }
   }
   &__summary {
     margin: 0 auto;
     padding: 2px;
     color: #696969;
+    line-height: 1.3em;
   }
 
 }
